@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Railway booking</title>
+</head>
+<body>
+<form action="/Railway_Booking/RailwayServlet/" method="post" onsubmit="return validate()">
+<h1>WELCOME TO RAILWAY BOOKING</h1>
+<h3>Username<input type="text" name="name" id="username"></h3><br>
+<h3>Password<input type="password" name="password" id="password"></h3><br><br>
+<p id="p"></p>
+<input type="submit" value="Login" name="submit" id="login"> &nbsp;&nbsp;
+<input type="submit" value="New User" name="submit" id="register">
+</form>
+</body>
+<script type="text/javascript">
+function validate(){
+var a=document.getElementById("username").value;
+var b=document.getElementById("password").value;
+if(a==""||b==""){
+	document.getElementById("p").innerHTML = 'Enter username and password'
+	return false;
+}}
+
+</script>
+</html>
